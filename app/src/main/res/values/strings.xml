@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GaleryPhoto</string>
+    <string name="name_article">Nombre</string>
+    <string name="description_article">Description</string>
+    <string name="article_list">Article List</string>
+    <string name="detail_article">Detail Article</string>
 </resources>
