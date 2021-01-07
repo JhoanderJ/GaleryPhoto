@@ -3,7 +3,7 @@ package com.jhoander.galeryphoto.data.repository
 import com.jhoander.galeryphoto.domain.model.Article
 import io.reactivex.Observable
 
-interface ArticleListRepository {
+interface ArticleRepository {
 
-    fun getData(): Observable<Article>
+    fun getArticles(): Observable<List<Article>>
 }
