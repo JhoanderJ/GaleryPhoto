@@ -44,7 +44,6 @@ class ArticleListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        articleRv.addItemDecoration(DividerItemDecoration(activity, LinearLayoutManager.VERTICAL))
         viewModel.getArticleList()
     }
 
