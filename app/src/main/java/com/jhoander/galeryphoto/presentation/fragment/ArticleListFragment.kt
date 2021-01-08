@@ -96,7 +96,7 @@ class ArticleListFragment : Fragment() {
         articleRv.layoutManager = GridLayoutManager(context, 1)
         articleRv.adapter = articleListAdapter
 
-        articles?.let {
+        articles.let {
             articleListAdapter.setList(it)
         }
     }
