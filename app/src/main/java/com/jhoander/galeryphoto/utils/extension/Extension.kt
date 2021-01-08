@@ -5,21 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
-import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
-import com.bumptech.glide.Glide
 import com.jhoander.galeryphoto.utils.base.SafeClickListener
 
 fun ViewGroup.inflate(layoutRes: Int): View {
     return LayoutInflater.from(context).inflate(layoutRes, this, false)
 }
-
-fun ImageView.loadUrl(url: String) {
-    Glide.with(context).load(url).into(this)
-}
-
 
 fun RelativeLayout.showProgress(show: Boolean, activity: FragmentActivity?) {
     if (show) {
