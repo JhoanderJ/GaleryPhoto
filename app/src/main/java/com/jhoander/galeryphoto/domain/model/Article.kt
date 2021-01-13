@@ -4,9 +4,9 @@ import android.os.Parcel
 import android.os.Parcelable
 
 data class Article(
-    val title: String?,
-    val description: String?,
-    val image: String?
+    var title: String?,
+    var description: String?,
+    var image: String?
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
