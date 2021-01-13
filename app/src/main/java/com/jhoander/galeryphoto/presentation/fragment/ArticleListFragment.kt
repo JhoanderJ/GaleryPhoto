@@ -142,7 +142,7 @@ class ArticleListFragment : Fragment() {
     private fun changeFragment(article : Article){
         val b = Bundle()
         b.putParcelable("article", article)
-        articleDetailFragment.setArguments(b)
+        articleDetailFragment.arguments = b
         addFragment(articleDetailFragment, R.id.fragmentContainer)
     }
 
